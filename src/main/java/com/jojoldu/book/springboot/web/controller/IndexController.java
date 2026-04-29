@@ -1,4 +1,4 @@
-package com.jojoldu.book.springboot.controller;
+package com.jojoldu.book.springboot.web.controller;
 
 import com.jojoldu.book.springboot.service.posts.PostsService;
 import lombok.RequiredArgsConstructor;
@@ -14,5 +14,10 @@ public class IndexController {
     @GetMapping("/")
     public String index() {
         return "index";
+    }
+
+    @GetMapping("/posts/save")
+    public String postsave() {
+        return "posts_save";
     }
 }
