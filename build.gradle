@@ -37,6 +37,7 @@ bootJar {
 dependencies {
     // 프로젝트 개발에 필요한 의존성을 선언 하는 곳
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
     // 테스트
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
